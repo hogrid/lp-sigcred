@@ -1,0 +1,20 @@
+{
+  "systemParams": "darwin-x64-83",
+  "modulesFolders": [
+    "assets"
+  ],
+  "flags": [],
+  "linkedModules": [],
+  "topLevelPatterns": [
+    "bootstrap@^4.4.1",
+    "jquery@^3.4.1",
+    "lity@^2.4.0"
+  ],
+  "lockfileEntries": {
+    "bootstrap@^4.4.1": "https://registry.yarnpkg.com/bootstrap/-/bootstrap-4.4.1.tgz#8582960eea0c5cd2bede84d8b0baf3789c3e8b01",
+    "jquery@^3.4.1": "https://registry.yarnpkg.com/jquery/-/jquery-3.4.1.tgz#714f1f8d9dde4bdfa55764ba37ef214630d80ef2",
+    "lity@^2.4.0": "https://registry.yarnpkg.com/lity/-/lity-2.4.0.tgz#af7eb0c33efe3b21c31ab22848e608eca432e819"
+  },
+  "files": [],
+  "artifacts": {}
+}
