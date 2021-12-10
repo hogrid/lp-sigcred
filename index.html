@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="assets/bootstrap/dist/css/bootstrap.min.css" />
     <link rel="stylesheet" href="assets/slick/slick.css" />
     <link rel="stylesheet" href="assets/slick/slick-theme.css" />
-	<link rel="stylesheet" href="//unpkg.com/aos@next/dist/aos.css" />
+    <link rel="stylesheet" href="//unpkg.com/aos@next/dist/aos.css" />
     <link rel="stylesheet" href="css/main.css" />
   </head>
   <body>
@@ -26,21 +26,65 @@
       <div class="container-fluid">
         <div class="row">
           <div class="col-lg-12 p-0">
-            <img src="img/banner-desk.jpg" alt="" class="img-fluid w-100 d-none d-md-block" />
-            <img src="img/banner-mob.png" alt="" class="img-fluid w-100 d-block d-md-none" />
+            <a href="#simule">
+              <img
+                src="img/banner-desk.jpg"
+                alt=""
+                class="img-fluid w-100 d-none d-md-block"
+              />
+              <img
+                src="img/banner-mob.png"
+                alt=""
+                class="img-fluid w-100 d-block d-md-none"
+              />
+            </a>
           </div>
         </div>
       </div>
     </section>
-    <section class="sc sc-02 pb-5">
+    <section class="sc sc-02 pb-5" id="simule">
       <div class="container">
-        <div class="row">
-          <div class="col-lg-12 px-0 py-5 text-center">
+        <div class="row justify-content-center" id="calculo">
+          <div class="col-lg-10 px-0 py-5 text-center">
             <h2>Simule já sua antecipação!</h2>
             <h3 class="mb-4">Informe abaixo seu saldo FGTS:</h3>
-            <form action="">
-              <input type="text" placeholder="R$ 0,00" />
-              <button><img src="img/check.png" alt="" /></button>
+            <form action="" id="simulador">
+              <div class="row">
+                <div class="col-md-6 my-2">
+                  <input
+                    type="text"
+                    placeholder="Nome"
+                    class="nome w-100"
+                    id="nome"
+                    required
+                  />
+                </div>
+                <div class="col-md-6 my-2">
+                  <input
+                    type="text"
+                    placeholder="Telefone"
+                    class="fone w-100"
+                    id="fone"
+                    required
+                  />
+                </div>
+              </div>
+              <div class="row my-2">
+                <div class="col-10">
+                  <input
+                    type="text"
+                    placeholder="R$ 0,00"
+                    class="money w-100 px-0"
+                    id="valor"
+                    required
+                  />
+                </div>
+                <div class="col-2">
+                  <button class="w-100 bt-form">
+                    <img src="img/check.png" alt="" />
+                  </button>
+                </div>
+              </div>
             </form>
             <p class="mt-4">
               <i
@@ -49,15 +93,39 @@
                 concluídas</i
               >
             </p>
-            <p>Não sabe seu FGTS? <a href="">Clique aqui.</a></p>
+            <p>Não sabe seu FGTS? <a href="#como-funciona">Clique aqui.</a></p>
+          </div>
+          <div class="col-lg-12 text-center d-none">
+            <a href="" class="bt bt-01">SIMULAR AGORA</a>
+          </div>
+        </div>
+        <!-- Divisor -->
+        <div class="row justify-content-center hideBox" id="resultado">
+          <div class="col-lg-10 px-0 py-5 text-center">
+            <p class="my-0">
+              Será utilizado apenas <strong><span id="valor1">0</span></strong>
+            </p>
+            <p class="my-0">
+              do seu saldo de <strong><span id="valor2">0</span></strong>
+            </p>
+            <h3 class="txt-liberado">Valor liberado:</h3>
+            <div class="box-liberado">
+              <p><span id="valor3">0</span></p>
+            </div>
+            <p>Taxa de juros ao mês: 1.99%</p>
           </div>
           <div class="col-lg-12 text-center">
-            <a href="" class="bt bt-01">SIMULAR AGORA</a>
+            <a
+              href="https://simulador.izidev.com.br/gsc-promotora"
+              target="_Blank"
+              class="bt bt-01"
+              >QUERO ANTECIPAR AGORA!</a
+            >
           </div>
         </div>
       </div>
     </section>
-    <section class="sc sc-03 py-5">
+    <section class="sc sc-03 py-5" id="como-funciona">
       <div class="container">
         <div class="row justify-content-center">
           <div class="col-lg-10 p-0 text-center">
@@ -73,14 +141,20 @@
             <figure>
               <img src="img/app-01.png" class="img-fluid" alt="" />
             </figure>
-			<div class="download">
-				<a href="" target="_Blank">
-					<img src="img/google-play.png" class="img-fluid" alt="">
-				</a>
-				<a href="" target="_Blank">
-					<img src="img/app-store.png" class="img-fluid" alt="">
-				</a>
-			</div>
+            <div class="download">
+              <a
+                href="https://play.google.com/store/apps/details?id=br.gov.caixa.fgts.trabalhador &hl=pt_BR&gl=US"
+                target="_Blank"
+              >
+                <img src="img/google-play.png" class="img-fluid" alt="" />
+              </a>
+              <a
+                href="https://apps.apple.com/br/app/fgts/id1038441027"
+                target="_Blank"
+              >
+                <img src="img/app-store.png" class="img-fluid" alt="" />
+              </a>
+            </div>
           </div>
           <div class="col-lg-4 text-center">
             <p class="txt1"><strong>PASSO 2</strong> DE 3</p>
@@ -106,7 +180,7 @@
         </div>
       </div>
     </section>
-    <section class="sc sc-04 py-5">
+    <section class="sc sc-04 py-5" id="depoimentos">
       <div class="container">
         <div class="row justify-content-center">
           <div class="col-lg-8 p-0 text-center">
@@ -121,7 +195,11 @@
       <div class="container-fluid">
         <div class="row justify-content-end">
           <div class="col-lg-10">
-			  <img src="img/depo-mob.png" class="d-block d-md-none img-fluid w-100" alt="">
+            <img
+              src="img/depo-mob.png"
+              class="d-block d-md-none img-fluid w-100"
+              alt=""
+            />
             <div class="depoimentos w-100 d-block mt-5 mb-4">
               <div class="card-depo card-1 d-none d-md-block">
                 <img src="img/depo.png" alt="" class="img-fluid w-100" />
@@ -178,7 +256,7 @@
               ><img src="img/ico-whats.png" height="30" alt="" class="mr-1" />
               NOS CHAME NO WHATSAPP</a
             >
-            <a href="" class="bt bt-01 d-block w-100">QUERO SIMULAR</a>
+            <a href="#simule" class="bt bt-01 d-block w-100">QUERO SIMULAR</a>
           </div>
         </div>
       </div>
@@ -224,36 +302,8 @@
     <script src="assets/jquery/dist/jquery.slim.min.js"></script>
     <script src="assets/bootstrap/dist/js/bootstrap.min.js"></script>
     <script src="assets/slick/slick.min.js"></script>
-	<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script src="assets/mask/dist/jquery.mask.min.js"></script>
     <script src="js/main.js"></script>
-    <script>
-      $(document).ready(function () {
-        $(".depoimentos").slick({
-          slidesToShow: 3,
-          dots: true,
-          infinite: false,
-		  variableWidth: true,
-          responsive: [
-            {
-              breakpoint: 768,
-              settings: {
-                arrows: false,
-                slidesToShow: 3,
-				dots: true,
-              },
-            },
-            {
-              breakpoint: 480,
-              settings: {
-                arrows: false,
-                slidesToShow: 1,
-				dots: true,
-              },
-            },
-          ],
-        });
-      });
-	  AOS.init();
-    </script>
   </body>
 </html>

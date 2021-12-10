@@ -181,6 +181,9 @@ h2{
 h3{
   font-size: 45px;
 }
+strong{
+  font-family: 'Myriad Pro Bold' !important;
+}
 /* --------------------- DEFAULT --------------------- */
 body {
  width: 100%;
@@ -268,6 +271,7 @@ header{
     width: 380px;
     text-indent: 15px;
     font-size: 48px;
+    padding-top: 10px;
     font-family: 'Myriad Pro Bold';
     &::placeholder{
       color: $Preto;
@@ -281,9 +285,9 @@ header{
     border-radius: 15px;
     height: 70px;
     padding: 0 25px;
-    margin-left: 10px;
+    margin-left: 5px;
     position: relative;
-    top: -10px;
+    top: 0px;
     img{
       height: 45px;
     }
@@ -303,6 +307,40 @@ header{
       color: #d3e0ff;
     }
   }
+  .txt-liberado{
+    font-size: 40px;
+    margin-top: 20px;
+  }
+  .box-liberado{
+    background-color: #2dc164;
+    border-radius: 20px;
+    padding: 30px 30px 20px;
+    margin-bottom: 20px;
+    width: auto;
+    display: inline-block;
+    p{
+      font-size: 54px;
+      line-height: 40px;
+      font-family: 'Myriad Pro Bold';
+      margin-bottom: 0;
+    }
+  }
+  #resultado{
+    span{
+      font-family: 'Myriad Pro Bold';
+    }
+  }
+}
+.showBox{
+  opacity: 1 !important;
+  width: auto !important;
+  height: auto !important;
+  @include trans(2s);
+}
+.hideBox{
+  opacity: 0;
+  width: 0;
+  height: 0;
 }
 .sc-03{
   background-color: #eeebeb;
