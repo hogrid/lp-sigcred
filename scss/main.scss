@@ -184,6 +184,14 @@ h3{
 strong{
   font-family: 'Myriad Pro Bold' !important;
 }
+@media (max-width: 768px) {
+  h2{
+    font-size: 45px;
+  }
+  h3{
+    font-size: 30px;
+  }
+}
 /* --------------------- DEFAULT --------------------- */
 body {
  width: 100%;
@@ -328,6 +336,11 @@ header{
   #resultado{
     span{
       font-family: 'Myriad Pro Bold';
+    }
+  }
+  @media (max-width: 768px) {
+    .bt-01{
+      font-size: 17px;
     }
   }
 }
